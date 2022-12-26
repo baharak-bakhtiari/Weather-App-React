@@ -4,28 +4,18 @@ import pressureIcon from "./images/Pressure.svg";
 import windIcon from "./images/Wind.svg";
 import humidityIcon from "./images/Humidity.svg";
 import weatherImage from "./images/icons/weather/13n.webp";
-export default function Weather() {
+import SearchCity from "./SearchCity";
+
+export default function Weather(props) {
   return (
     <div className="container">
-      <div className="row search-box">
-        <form className="input-container">
-          <i className="fa-solid fa-location-dot" id="locationButton"></i>
-          <input
-            className="search-input"
-            type="text"
-            placeholder="search for city"
-            autocomplete="off"
-            autofocus="off"
-          />
-          <i className="fa-solid fa-magnifying-glass" id="search-btn"></i>
-        </form>
-      </div>
+      <SearchCity className="row" defaultCity={props.defaultCity} />
       <div className="row Weather">
         <div className="col-8 currentSituation">
           <div className="general-info">
             <div className="info">
               <div className="city-info">
-                <span className="city-name">Stuttgart</span>
+                <span className="city-name">{props.defaultCity}</span>
                 <span className="current-date">Saturday 23:13</span>
               </div>
               <div className="info-section">
