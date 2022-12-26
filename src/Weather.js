@@ -1,6 +1,9 @@
 import React from "react";
 import "./weather.css";
-
+import pressureIcon from "./images/Pressure.svg";
+import windIcon from "./images/Wind.svg";
+import humidityIcon from "./images/Humidity.svg";
+import weatherImage from "./images/icons/weather/13n.webp";
 export default function Weather() {
   return (
     <div className="container">
@@ -39,7 +42,7 @@ export default function Weather() {
               </div>
             </div>
             <div className="weather-image">
-              <img src="images/f03d.png" alt="weatherImage" id="weather-icon" />
+              <img src={weatherImage} alt="weatherImage" id="weather-icon" />
             </div>
           </div>
           <div className="detail-info">
@@ -50,11 +53,7 @@ export default function Weather() {
                   7.2 m/h
                 </p>
               </div>
-              <img
-                src="images/Wind.svg"
-                alt="wind-icon"
-                className="detail-icon"
-              />
+              <img src={windIcon} alt="wind-icon" className="detail-icon" />
             </div>
             <div className="detail-title">
               <div className="detail-description">
@@ -64,7 +63,7 @@ export default function Weather() {
                 </p>
               </div>
               <img
-                src="images/Humidity.svg"
+                src={humidityIcon}
                 alt="humidity-icon"
                 className="detail-icon"
               />
@@ -77,7 +76,7 @@ export default function Weather() {
                 </p>
               </div>
               <img
-                src="/images/Pressure.svg"
+                src={pressureIcon}
                 alt="pressure-icon"
                 className="detail-icon"
               />
