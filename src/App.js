@@ -1,7 +1,13 @@
 import React from "react";
-import "./App.css";
 import Weather from "./Weather";
+import "./App.css";
 
 export default function App() {
-  return <Weather defaultCity={"Stuttgart"} />;
+  return (
+    <div className="App">
+      <div className="container">
+        <Weather defaultCity="Stuttgart" />
+      </div>
+    </div>
+  );
 }
