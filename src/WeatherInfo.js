@@ -1,4 +1,5 @@
 import React from "react";
+import FormattedDate from "./FormattedDate.js";
 import "./WeatherInfo.css";
 import pressureIcon from "./images/Pressure.svg";
 import windIcon from "./images/Wind.svg";
@@ -12,7 +13,9 @@ export default function WeatherInfo(props) {
         <div className="info">
           <div className="city-info">
             <span className="city-name">{props.data.city}</span>
-            <span className="current-date">Saturday 23:13</span>
+            <div className="current-date">
+              <FormattedDate date={props.data.date} />
+            </div>
           </div>
           <div className="info-section">
             <div className="temp-info">

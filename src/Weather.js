@@ -17,6 +17,7 @@ export default function Weather(props) {
       city: response.data.name,
       pressure: response.data.main.pressure,
       description: response.data.weather[0].description,
+      date: new Date(),
     });
   }
 
