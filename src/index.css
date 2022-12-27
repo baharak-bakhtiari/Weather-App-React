@@ -13,7 +13,7 @@
 }
 
 body {
-  background: url(/src/images/icons/background/background2.svg) center
-    center/cover no-repeat;
+  background: url(/public/icons/background/background2.svg) center center/cover
+    no-repeat;
   font-family: "Belgrano", serif;
 }

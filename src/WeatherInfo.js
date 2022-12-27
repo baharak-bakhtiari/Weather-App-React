@@ -4,9 +4,10 @@ import "./WeatherInfo.css";
 import pressureIcon from "./images/Pressure.svg";
 import windIcon from "./images/Wind.svg";
 import humidityIcon from "./images/Humidity.svg";
-import weatherImage from "./images/icons/weather/13n.webp";
+//import weatherImage from "./images/icons/weather/13n.webp";
 
 export default function WeatherInfo(props) {
+  let iconUrl = `/icons/weather/${props.data.icon}.webp`;
   return (
     <div className="col-8 currentSituation">
       <div className="general-info">
@@ -31,7 +32,7 @@ export default function WeatherInfo(props) {
           </div>
         </div>
         <div className="weather-image">
-          <img src={weatherImage} alt="weatherImage" id="weather-icon" />
+          <img src={iconUrl} alt="weatherImage" id="weather-icon" />
         </div>
       </div>
       <div className="detail-info">
