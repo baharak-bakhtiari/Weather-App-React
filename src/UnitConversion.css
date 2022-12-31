@@ -1,0 +1,50 @@
+.showWeather {
+  display: flex;
+}
+
+.weather-info {
+  color: var(--white);
+  font-size: 5rem;
+  font-family: var(--font-main);
+  font-weight: 500;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-description {
+  display: block;
+  color: var(--gray);
+  font-size: 1.1rem;
+  margin-top: 0.9rem;
+}
+
+.scale-switcher {
+  display: flex;
+  background-color: var(--bg);
+  width: 12rem;
+  height: 7rem;
+  border-radius: 8px;
+  margin: 0 1.5rem;
+  justify-content: center;
+  position: relative;
+  bottom: 1.1rem;
+}
+
+.scale-switcher button {
+  font-size: 5rem;
+  width: 6rem;
+  height: 7rem;
+  line-height: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.scale-switcher button:focus {
+  background-color: rgba(255, 255, 255, 0.192);
+  color: var(--white);
+}

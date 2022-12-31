@@ -4,7 +4,7 @@ import "./WeatherInfo.css";
 import pressureIcon from "./images/Pressure.svg";
 import windIcon from "./images/Wind.svg";
 import humidityIcon from "./images/Humidity.svg";
-//import weatherImage from "./images/icons/weather/13n.webp";
+import UnitConversion from "./UnitConversion.js";
 
 export default function WeatherInfo(props) {
   let iconUrl = `/icons/weather/${props.data.icon}.webp`;
@@ -18,17 +18,11 @@ export default function WeatherInfo(props) {
               <FormattedDate date={props.data.date} />
             </div>
           </div>
-          <div className="info-section">
-            <div className="temp-info">
-              <span id="temperature">{Math.round(props.data.temperature)}</span>
-              <span className="weather-description" id="description">
-                {props.data.description}
-              </span>
-            </div>
-            <div className="scale-switcher">
-              <button className="celsius">C</button>
-              <button className="fahrenheit">F</button>
-            </div>
+          <div className="temp-info">
+            <UnitConversion
+              celsius={props.data.temperature}
+              description={props.data.description}
+            />
           </div>
         </div>
         <div className="weather-image">
