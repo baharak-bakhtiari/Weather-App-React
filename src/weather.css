@@ -54,7 +54,7 @@
   color: var(--main-color);
 }
 
-/*.forecast {
+.forecast {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -81,11 +81,11 @@
   height: 3.5rem;
 }
 
-.each-description {
+.each-day-info {
   margin-bottom: 0;
 }
 
-.temp-prediction {
+.temp-forecast {
   margin-bottom: 0;
   color: var(--white);
 }
@@ -101,4 +101,4 @@
 
 .weather-forecast-temperature-min {
   color: var(--gray);
-}*/
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo.js";
+import WeatherForecast from "./WeatherForecast.js";
 import "./weather.css";
 
 export default function Weather(props) {
@@ -10,6 +11,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     return setWeatherdata({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       icon: response.data.weather[0].icon,
@@ -53,8 +55,12 @@ export default function Weather(props) {
             <i className="fa-solid fa-magnifying-glass" id="search-btn"></i>
           </form>
         </div>
-        <WeatherInfo data={weatherData} className="row Weather" />
-        <div className="col-4" id="forecast"></div>
+        <div class="row Weather">
+          <WeatherInfo data={weatherData} className="col-8 Weather" />
+          <div className="col-4 forecast">
+            <WeatherForecast data={weatherData} />
+          </div>
+        </div>
         <p className="writer">
           Coded by
           <a
