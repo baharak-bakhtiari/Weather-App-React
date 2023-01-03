@@ -28,12 +28,34 @@ export default function WeatherForecastDay(props) {
     return days[day];
   }
 
+  function formatForecastDate() {
+    let date = new Date(props.data.dt * 1000);
+    let day = date.getDate();
+    let months = [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+    ];
+    let month = months[date.getMonth()];
+    if (day < 10) return ` 0${day}/${month}`;
+    else return ` ${day}/${month}`;
+  }
+
   return (
     <div className="each-day d-flex justify-content-between">
       <div className="day-info d-flex flex-column">
         <p className="date">
           {day()}
-          <span>24/11</span>
+          <span>{formatForecastDate()}</span>
         </p>
         <div className="temp-forecast">
           <span className="weather-forecast-temperature-min">
