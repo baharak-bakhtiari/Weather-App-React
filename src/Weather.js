@@ -38,18 +38,30 @@ export default function Weather(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function showPosition(position) {
+    let apiKey = "de2c40e370d58e257faf07ba4ea95840";
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function getLiveLocation() {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  }
+
   if (weatherData.ready) {
     return (
       <div>
         <div className="search-box">
           <form className="input-container" onSubmit={handleSubmit}>
-            <i className="fa-solid fa-location-dot" id="locationButton"></i>
+            <i className="fa-solid fa-location-dot" id="locationButton" onClick={getLiveLocation}></i>
             <input
               className="search-input"
               type="text"
               placeholder="search for city"
               autoComplete="off"
-              autoFocus="off"
+              autoFocus="on"
               onChange={updateCity}
             />
             <i className="fa-solid fa-magnifying-glass" id="search-btn"></i>
@@ -73,6 +85,5 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
   }
 }
