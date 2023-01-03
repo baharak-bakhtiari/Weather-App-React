@@ -29,7 +29,7 @@ export default function WeatherForecastDay(props) {
   }
 
   return (
-    <div className="each-day d-flex">
+    <div className="each-day d-flex justify-content-between">
       <div className="day-info d-flex flex-column">
         <p className="date">
           {day()}
@@ -44,7 +44,7 @@ export default function WeatherForecastDay(props) {
           </span>
         </div>
       </div>
-      <img src={iconUrl} alt="weatherIcon" />
+      <img src={iconUrl} alt="weatherIcon" className="forecast-icon" />
     </div>
   );
 }

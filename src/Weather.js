@@ -55,7 +55,11 @@ export default function Weather(props) {
       <div>
         <div className="search-box">
           <form className="input-container" onSubmit={handleSubmit}>
-            <i className="fa-solid fa-location-dot" id="locationButton" onClick={getLiveLocation}></i>
+            <i
+              className="fa-solid fa-location-dot"
+              id="locationButton"
+              onClick={getLiveLocation}
+            ></i>
             <input
               className="search-input"
               type="text"
@@ -67,7 +71,7 @@ export default function Weather(props) {
             <i className="fa-solid fa-magnifying-glass" id="search-btn"></i>
           </form>
         </div>
-        <div class="Weather d-flex">
+        <div className="Weather d-flex">
           <WeatherInfo data={weatherData} />
           <WeatherForecast data={weatherData} />
         </div>

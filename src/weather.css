@@ -37,7 +37,7 @@
 }
 
 .weather {
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .writer {
@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 0.7rem;
+  padding-left: 0.5rem;
 }
 
 .each-day {
@@ -66,7 +66,7 @@
   border-radius: 10px;
   background-color: var(--bg);
   color: var(--gray);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   font-family: var(--font-main);
   transition: all 0.25s linear;
 }
@@ -75,7 +75,7 @@
   background-color: rgba(255, 255, 255, 0.144);
 }
 
-.each-day img {
+.forecast-icon {
   height: 3.5rem;
 }
 
