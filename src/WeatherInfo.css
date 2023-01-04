@@ -2,6 +2,7 @@
   border: var(--border);
   border-radius: 10px;
   background-color: var(--bg);
+  backdrop-filter: blur(5px);
   color: var(--gray);
   width: 100%;
   display: flex;
@@ -102,6 +103,7 @@
   border: var(--border);
   border-radius: 10px;
   background-color: var(--bg);
+  backdrop-filter: blur(5px);
   color: var(--gray);
   padding: 1rem;
   display: flex;
@@ -113,7 +115,7 @@
 }
 
 .detail-title:hover {
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: rgba(28, 27, 69, 0.8);
 }
 
 .detail-description {

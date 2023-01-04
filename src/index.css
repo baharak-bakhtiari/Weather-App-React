@@ -1,8 +1,8 @@
 :root {
   --main-color: #d3ad7f;
   --black: #13131a;
-  --bg: rgba(217, 217, 217, 0.07);
-  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --bg: rgba(10, 10, 26, 0.5);
+  --border: 0.1rem solid rgba(248, 250, 252, 0.3);
   --white: #fff;
   --gray: rgba(255, 255, 255, 0.7);
   --font-main: "Space Grotesk", sans-serif;

@@ -3,6 +3,8 @@
   align-items: center;
   margin-bottom: 0.5rem;
   border: var(--border);
+  backdrop-filter: blur(5px);
+  background-color: var(--bg);
   border-radius: 10px;
 }
 
@@ -65,6 +67,7 @@
   border: var(--border);
   border-radius: 10px;
   background-color: var(--bg);
+  backdrop-filter: blur(5px);
   color: var(--gray);
   padding: 0.5rem 1rem;
   font-family: var(--font-main);
@@ -72,7 +75,7 @@
 }
 
 .each-day:hover {
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: rgba(28, 27, 69, 0.8);
 }
 
 .forecast-icon {
