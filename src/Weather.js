@@ -71,7 +71,7 @@ export default function Weather(props) {
             <i className="fa-solid fa-magnifying-glass" id="search-btn"></i>
           </form>
         </div>
-        <div className="Weather d-flex">
+        <div className="Weather d-md-flex flex-xl-row flex-lg-row flex-md-column">
           <WeatherInfo data={weatherData} />
           <WeatherForecast data={weatherData} />
         </div>

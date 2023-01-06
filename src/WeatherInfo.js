@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
   let iconUrl = `/icons/weather/${props.data.icon}.webp`;
 
   return (
-    <div className="col-8 currentSituation">
+    <div className="col-lg-8 currentSituation">
       <div className="general-info">
         <div className="info">
           <div className="city-info">

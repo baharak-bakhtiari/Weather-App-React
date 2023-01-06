@@ -1,7 +1,7 @@
 :root {
   --main-color: #d3ad7f;
   --black: #13131a;
-  --bg: rgba(10, 10, 26, 0.5);
+  --bg: rgba(21, 21, 53, 0.6);
   --border: 0.1rem solid rgba(248, 250, 252, 0.3);
   --white: #fff;
   --gray: rgba(255, 255, 255, 0.7);
@@ -10,6 +10,24 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(42, 17, 71);
+  border-radius: 5rem;
 }
 
 body {
