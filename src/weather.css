@@ -104,14 +104,66 @@
 @media (min-width: 768px) and (max-width: 992px) {
   .all-days {
     max-width: 100%;
-    margin-top: 0.7rem !important;
+    margin: 0.7rem 0 !important;
   }
 
   .each-day {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
-    max-width: 60%;
+    max-width: 110px !important;
+  }
+
+  .date {
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+
+  .forecast-icon {
+    height: 3rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .all-days {
+    max-width: 100%;
+    margin: 0.7rem 0 !important;
+  }
+
+  .each-day {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+    max-width: 80px !important;
+  }
+
+  .date {
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+
+  .forecast-icon {
+    height: 3rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .all-days {
+    max-width: 100%;
+    margin: 0.7rem 0 !important;
+  }
+
+  .each-day {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+    max-width: 60px !important;
+  }
+
+  .date {
+    text-align: center;
   }
 
   .forecast-icon {

@@ -185,3 +185,85 @@
     height: 5rem;
   }
 }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .weather-image img {
+    width: 15rem;
+  }
+
+  .weather-info {
+    font-size: 4rem;
+  }
+
+  .scale-switcher {
+    width: 9rem;
+    height: 6rem;
+    margin: 0 0.3rem;
+  }
+
+  .scale-switcher button {
+    font-size: 4.5rem;
+    width: 4.5rem;
+    height: 6rem;
+    line-height: 1rem;
+  }
+
+  .detail-title {
+    max-width: 100%;
+    padding: 1rem 1rem;
+  }
+
+  .detail-name {
+    font-size: 1.1rem;
+  }
+
+  .detail-value {
+    margin-top: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  .detail-icon {
+    height: 5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .weather-image img {
+    width: 10rem;
+  }
+
+  .weather-info {
+    font-size: 4rem;
+  }
+
+  .scale-switcher {
+    width: 9rem;
+    height: 6rem;
+    margin: 0 0.3rem;
+  }
+
+  .scale-switcher button {
+    font-size: 4.5rem;
+    width: 4.5rem;
+    height: 6rem;
+    line-height: 1rem;
+  }
+
+  .detail-title {
+    max-width: 100%;
+    padding: 1rem 1rem;
+  }
+
+  .detail-name {
+    font-size: 1.1rem;
+  }
+
+  .detail-value {
+    margin-top: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  .detail-icon {
+    height: 5rem;
+  }
+}
