@@ -17,3 +17,12 @@ html {
     font-size: 85%;
   }
 }
+
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    width: 90% !important;
+  }
+}

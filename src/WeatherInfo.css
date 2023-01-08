@@ -186,7 +186,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .weather-image img {
     width: 15rem;
   }
@@ -218,8 +218,8 @@
   }
 
   .detail-value {
-    margin-top: 3.5rem;
-    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    font-size: 1rem;
   }
 
   .detail-icon {
@@ -237,15 +237,15 @@
   }
 
   .scale-switcher {
-    width: 9rem;
-    height: 6rem;
+    width: 6rem;
+    height: 4rem;
     margin: 0 0.3rem;
   }
 
   .scale-switcher button {
-    font-size: 4.5rem;
-    width: 4.5rem;
-    height: 6rem;
+    font-size: 3rem;
+    width: 3rem;
+    height: 4rem;
     line-height: 1rem;
   }
 
@@ -255,15 +255,15 @@
   }
 
   .detail-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .detail-value {
-    margin-top: 3.5rem;
-    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
   }
 
   .detail-icon {
-    height: 5rem;
+    height: 4rem;
   }
 }
