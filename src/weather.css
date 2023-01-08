@@ -38,8 +38,12 @@
   outline: none;
 }
 
+.no-gutters {
+  margin-right: 0 !important;
+}
+
 .weather {
-  gap: 1rem;
+  column-gap: 1.2rem;
 }
 
 .writer {
@@ -57,8 +61,7 @@
 }
 
 .all-days {
-  justify-content: space-between;
-  padding-left: 0.5rem;
+  max-width: 33%;
 }
 
 .each-day {
@@ -67,7 +70,7 @@
   background-color: var(--bg);
   backdrop-filter: blur(5px);
   color: var(--gray);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   font-family: var(--font-main);
   transition: all 0.25s linear;
 }
@@ -96,4 +99,22 @@
 
 .weather-forecast-temperature-min {
   color: var(--gray);
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .all-days {
+    max-width: 100%;
+    margin-top: 0.7rem !important;
+  }
+
+  .each-day {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+    max-width: 60%;
+  }
+
+  .forecast-icon {
+    height: 3rem;
+  }
 }
