@@ -17,6 +17,14 @@
   text-decoration: none;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  font-size: 100%;
+  min-height: 100%;
+}
+
 html::-webkit-scrollbar {
   width: 0.7rem;
 }
@@ -34,4 +42,16 @@ body {
   background: url(/public/icons/background/background2.svg) center center/cover
     no-repeat;
   font-family: "Belgrano", serif;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
 }
