@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo.js";
 import WeatherForecast from "./WeatherForecast.js";
+import LoadingSpinner from "./LoadingSpinner.js";
 import "./weather.css";
 
 export default function Weather(props) {
@@ -76,18 +77,29 @@ export default function Weather(props) {
           <WeatherForecast data={weatherData} />
         </div>
         <p className="writer">
-          Coded by
+          This project was Coded by
+          <a
+            href="https://www.linkedin.com/in/baharak-bakhtiari"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Baharak Bakhtiari
+          </a>{" "}
+          and is{" "}
           <a
             href="https://github.com/The-little-spring"
             target="_blank"
             rel="noreferrer"
           >
-            Baharak Bakhtiari
+            {" "}
+            open-sourced on GitHub
           </a>
         </p>
       </div>
     );
   } else {
     search();
+    return <LoadingSpinner />;
   }
 }
