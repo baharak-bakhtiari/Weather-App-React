@@ -25,7 +25,7 @@ export default function WeatherForecast(props) {
 
   if (loaded) {
     return (
-      <div className="all-days row no-gutters d-flex justify-content-between flex-lg-column col-lg-4 col-md-12">
+      <div className="all-days row no-gutters d-flex justify-content-between flex-lg-column col-lg-4 col-md-12 col-xs-4">
         {forecast.map(function (dailyForecast, index) {
           if (index > 0 && index < 7) {
             return <WeatherForecastDay data={dailyForecast} />;

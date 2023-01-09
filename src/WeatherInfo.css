@@ -66,8 +66,9 @@
   display: block;
   color: var(--gray);
   font-size: 1.1rem;
-  margin-top: 0.9rem;
-  min-width: 8.2rem;
+  margin-top: 1.2rem;
+  max-width: 8rem;
+  line-height: 1.5rem;
 }
 
 .scale-switcher {
@@ -229,23 +230,24 @@
 
 @media (max-width: 576px) {
   .weather-image img {
-    width: 10rem;
+    width: 20rem;
+    margin-right: 0;
   }
 
   .weather-info {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .scale-switcher {
-    width: 6rem;
-    height: 4rem;
+    width: 8rem;
+    height: 5.5rem;
     margin: 0 0.3rem;
   }
 
   .scale-switcher button {
-    font-size: 3rem;
-    width: 3rem;
-    height: 4rem;
+    font-size: 4rem;
+    width: 4rem;
+    height: 5.5rem;
     line-height: 1rem;
   }
 
@@ -265,5 +267,12 @@
 
   .detail-icon {
     height: 4rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .weather-image img {
+    width: 13.5rem;
+    margin-right: 0;
   }
 }

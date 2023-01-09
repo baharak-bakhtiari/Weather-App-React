@@ -43,7 +43,7 @@ export default function WeatherForecastDay(props) {
   }
 
   return (
-    <div className="each-day d-flex col-lg-12 col-sm-4 col-xs-2 justify-content-between">
+    <div className="each-day d-flex justify-content-between">
       <div className="day-info">
         <p className="date">
           {day()}
