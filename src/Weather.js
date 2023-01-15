@@ -77,7 +77,15 @@ export default function Weather(props) {
           <WeatherForecast data={weatherData} />
         </div>
         <p className="writer">
-          This project was Coded by
+          <a
+            href="https://github.com/The-little-spring"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Open-source code
+          </a>{" "}
+          by{" "}
           <a
             href="https://www.linkedin.com/in/baharak-bakhtiari"
             target="_blank"
@@ -85,15 +93,6 @@ export default function Weather(props) {
           >
             {" "}
             Baharak Bakhtiari
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/The-little-spring"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            open-sourced on GitHub
           </a>
         </p>
       </div>
