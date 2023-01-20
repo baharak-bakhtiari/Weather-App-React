@@ -69,7 +69,11 @@ export default function Weather(props) {
               autoFocus="on"
               onChange={updateCity}
             />
-            <i className="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i
+              className="fa-solid fa-magnifying-glass"
+              id="search-btn"
+              onClick={handleSubmit}
+            ></i>
           </form>
         </div>
         <div className="weather justify-content-between d-md-flex flex-xl-row flex-lg-row flex-md-column">

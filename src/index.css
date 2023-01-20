@@ -30,7 +30,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: transparent;
+  background: rgb(93, 37, 156);
 }
 
 html::-webkit-scrollbar-thumb {
